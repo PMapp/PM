@@ -1,0 +1,14 @@
+﻿<UserControl x:Class="MigrosTest4.Result"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" d:DesignHeight="300" d:DesignWidth="300">
+
+			 <!-- Yapılan işlemlerden sonra açılan sayfa. Örnek amaçlıdır.
+			 İleride pek çok sayfa ekleneceğinden bir önemi yoktur.-->
+	<Grid>
+		<TextBlock HorizontalAlignment="Left" Margin="73,59,0,0" TextWrapping="Wrap" Text="Kapak Bilgisi" VerticalAlignment="Top" Height="51" Width="161" FontSize="24"/>
+
+	</Grid>
+</UserControl>

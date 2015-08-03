@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="MigrosTest4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:local="clr-namespace:MigrosTest4"
+        Height="600" Width="800">
+		<!-- Farklı XAML dosyalarından içerik alabilmek için 4. satırı eklemek gerekmektedir.-->
+
+	<Grid Width="800" Height="600">
+		<!-- Bir fotoğrafı buton olarak kullanmak için gereken kod. Öncesinde yapılması gerekenler
+		dökümanda anlatılmıştır.-->
+		<Button  Click="WorldImage_Click" Name="worldImageClick" Cursor="Hand" Margin="0">
+			<Button.Template>
+				<ControlTemplate>
+					<Image Source="/Resources/1-main.jpg" Margin="0,0,-42,54"/>
+				</ControlTemplate>
+			</Button.Template>
+		</Button>
+
+		<!-- Örnek amaçlı konulmuştur. Farklı bir XAML dosyasında bulunan içeriği tek bir satırla gösterdik.
+		Projenin ilerleyen kısımlarında avantaj sağlayabilir çünkü aynı içerik farklı sayfalarda
+		pek çok kez gösterilecek. Bu tarz içerikler belirlenip bir XAML dosyasında toplanabilir ve
+		lazım olan yerlerde örnekteki gibi kolayca bir şekilde gereken dosyaya eklenebilir.
+		Özellikle statik içerikler için bu yapıyı kullanmak kolaylık sağlayacaktır.
+
+		!!!DAHA BASİT BİR YÖNTEM: YENİ XAML DOSYALARI OLUŞTURDUKÇA TOOLBOX'IN <PROJE İSMİ> CONTROLS
+		KISMI DA GÜNCELLENMEKTEDİR. OLUŞTURULAN XAML DOSYALARININ GÖRSEL İÇERİĞİ <PROJE İSMİ> CONTROLS
+		ALTINDAN SEÇİLEREK SÜRÜKLE BIRAK YÖNTEMİYLE YENİ XAML DOSYALARINA TAŞINABİLİR. !!!-->
+        <!-- CommonContent hedef dosyanın adıdır. En üstte bulunan turuncu rectangle CommonContent
+		dosyasından gelmektedir. Örnek olduğu için böylece bıraktım. İhtiyaçlara göre bu tarz içerikler
+		belirlenip bu yapı daha fazla yerde kullanılabilir.-->
+
+	</Grid>
+</UserControl>
